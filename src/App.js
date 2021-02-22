@@ -2,6 +2,7 @@ import './App.css';
 import WelcomeMessage from './WelcomeMessage'
 // import styled, {css} from 'styled-components'
 import AppLayout from './AppLayout'
+import AppBar from './AppBar'
 
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <AppLayout>
+          <AppBar />
           <WelcomeMessage />
         </AppLayout>
       </header>
