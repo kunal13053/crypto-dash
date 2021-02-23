@@ -1,7 +1,8 @@
 import React from 'react'
 import WelcomeMessage from './WelcomeMessage'
 import ConfirmButton from './ConfimButton'
-import Page from '../Shared/Page'
+import Page from '../Shared/Page' 
+import CoinGrid from './CoinGrid'
 
 // eslint-disable-next-line
 export default function () {
@@ -9,6 +10,7 @@ export default function () {
         <Page name="settings">
             <WelcomeMessage/>
             <ConfirmButton/>
+            <CoinGrid/>
         </Page>
     )
 }
