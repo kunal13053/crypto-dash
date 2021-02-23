@@ -12,18 +12,21 @@ export class AppProvider extends React.Component {
             page: "dashboard",
             ...this.savedSettings(),
             setPage: this.setPage,
-            confirmFavorites: this.confirmFavorites
+            confirmFavorites: this.confirmFavorites,
+            coinList: ''
         }
     }
 
     componentDidMount = () => {
-        console.log('In mount')
         this.fetchCoins()
     }
 
     fetchCoins = async () => {
-        let coinList = (await cc.coinList()).Data
-        console.log('coinList : ', coinList)
+        let coinListValue = (await cc.coinList()).Data
+        console.log('coinList : ', coinListValue)
+        this.setState({
+            coinList: coinListValue
+        })
     }
 
     confirmFavorites = () => {
