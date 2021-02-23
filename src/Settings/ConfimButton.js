@@ -16,6 +16,7 @@ const CenterDiv = styled.div`
     justify-content: center
 `
 
+// eslint-disable-next-line
 export default function() {
     return (
         <AppContext.Consumer>

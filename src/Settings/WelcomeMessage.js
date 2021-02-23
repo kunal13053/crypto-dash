@@ -2,6 +2,7 @@ import React from 'react'
 // import styled, {css} from 'styled-components'
 import {AppContext} from '../App/AppProvider'
 
+// eslint-disable-next-line
 export default function ({firstVisit}) {
     return (
         <AppContext.Consumer>

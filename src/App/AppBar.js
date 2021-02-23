@@ -39,6 +39,7 @@ function ControlButtons ({name, active}) {
     )
 }
 
+// eslint-disable-next-line
 export default function () {
     return (
         <Bar>
