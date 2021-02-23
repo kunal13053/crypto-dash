@@ -1,6 +1,7 @@
 import React from 'react'
 
 const cc = require('cryptocompare')
+cc.setApiKey('88a1ff7dc4b8482958c3561f6ddc880218294abc0b6bbda1b0b5f264b5cb56a6')
 
 export const AppContext = React.createContext()
 
