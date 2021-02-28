@@ -3,6 +3,7 @@ import WelcomeMessage from './WelcomeMessage'
 import ConfirmButton from './ConfimButton'
 import Page from '../Shared/Page' 
 import CoinGrid from './CoinGrid'
+import Search from './Search'
 
 // eslint-disable-next-line
 export default function () {
@@ -11,6 +12,7 @@ export default function () {
             <WelcomeMessage/>
             <CoinGrid topSection/>
             <ConfirmButton/>
+            <Search />
             <CoinGrid />
         </Page>
     )
