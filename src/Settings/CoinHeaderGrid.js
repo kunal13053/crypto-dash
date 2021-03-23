@@ -9,6 +9,8 @@ export const CoinHeaderGridStyled = styled.div`
 
 export const CoinSymbol = styled.div`
     justify-self: right;
+    width: fit-content;
+    display: flex;
 `
 
 const DeleteIcon = styled.div`
@@ -26,7 +28,7 @@ export default function({name, symbol, topSection}) {
         {topSection ? (
             <DeleteIcon>X</DeleteIcon>
         ) : (
-            <CoinSymbol> {symbol} </CoinSymbol>
+            <CoinSymbol> {symbol.substr(0,3)} </CoinSymbol>
         )}
     </CoinHeaderGridStyled>
 }
